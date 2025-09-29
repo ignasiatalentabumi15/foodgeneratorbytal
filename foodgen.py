@@ -3,6 +3,7 @@ import random
 import requests
 import json
 from io import BytesIO
+from transformers import pipeline
 from PIL import Image
 import io
 
@@ -331,3 +332,4 @@ elif st.session_state.mode == 'Beli':
 elif st.session_state.mode is None:
 
     st.info("Silakan pilih mode **Masak** atau **Beli** untuk memulai generator.")
+
